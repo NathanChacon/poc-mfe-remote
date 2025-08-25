@@ -38,7 +38,8 @@ module.exports = {
       name: 'light',                 // must match host's remotes key (left of @)
       filename: 'remoteEntry.js',
       exposes: {
-        './ProductPage': './src/pages/Product/ProductPage.jsx'
+        './ProductPage': './src/pages/Product/ProductPage.jsx',
+        './ProductRoutes': './src/routes/product/index.jsx'
       },
       shared: {
         react: { singleton: true, requiredVersion: false },
